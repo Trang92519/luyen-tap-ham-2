@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let animal = ['dog', 'chicken', 'cat', 'birt', 'fish', 'cat'];
+    let a = prompt('Nhap');
+
+    function getTotalItemOfArr(a, arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (a === arr[i]) {
+                count++;
+            }
+        }
+
+        return (count !== 0) ? count : -1;
+    }
+
+
+    let total = getTotalItemOfArr(a, animal);
+    alert(getTotalItemOfArr(a, animal));
+    if (total !== -1){
+        alert(`${a} xuat hien ${total} lan`);
+    }
+
+</script>
+
+</body>
+</html>

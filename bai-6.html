@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =[];
+    a.push(+prompt('Nhap so'));
+    document.write(a);
+
+    let check = false;
+    function checkNumber(){
+        if ( a >=0){
+           check = true;
+           document.write(check);
+        }else{
+            check= false;
+            document.write(check);
+        }
+    }
+    checkNumber();
+</script>
+</body>
+</html>

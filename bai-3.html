@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num =+prompt('NHap so nguyen ba ky')
+    let result = num;
+    if (num === 0 || num === 1) {
+       result=1;
+       alert(result);
+    }
+    while(num > 1) {
+        num--;
+        result *= num;
+    }
+    alert(result);
+</script>
+</body>
+</html>
